@@ -7,10 +7,10 @@ namespace CreateZipFiles
 {
     class Program
     {
-        private const string SourceArchive = @"C:\Users\chris\Downloads\ProfessionalCSharp7-master.zip";
-        private const string SourceTempFolder = @"c:\temp\procsharp7";
+        private const string SourceArchive = @"C:\Users\ChristianNagel\Downloads\ProfessionalCSharp2021-main.zip";
+        private const string SourceTempFolder = @"c:\temp\procsharp2021";
 
-        private readonly static string SourcesFolder = Path.Combine(SourceTempFolder, "ProfessionalCSharp7-master");
+        private readonly static string SourcesFolder = Path.Combine(SourceTempFolder, "ProfessionalCSharp2021-main");
 
         private const string ZipFolder = @"c:\temp\zipchapters";
 
@@ -166,48 +166,40 @@ namespace CreateZipFiles
         {
             ZipFileMapping = new Dictionary<string, string>()
             {
-                ["01_code.zip"] = "HelloWorld",
-                ["02_code.zip"] = "CoreCSharp",
-                ["03_code.zip"] = "ObjectsAndTypes",
-                ["04_code.zip"] = "ObjectOrientation",
-                ["05_code.zip"] = "Generics",
-                ["06_code.zip"] = "OperatorsAndCasts",
-                ["07_code.zip"] = "Arrays",
-                ["08_code.zip"] = "Delegates",
-                ["09_code.zip"] = "StringsAndRegularExpressions",
-                ["10_code.zip"] = "Collections",
-                ["11_code.zip"] = "SpecialCollections",
-                ["12_code.zip"] = "LINQ",
-                ["13_code.zip"] = "FunctionalProgramming",
-                ["14_code.zip"] = "ErrorsAndExceptions",
-                ["15_code.zip"] = "Async",
-                ["16_code.zip"] = "ReflectionAndDynamic",
-                ["17_code.zip"] = "Memory",
-                ["18_code.zip"] = "VisualStudio",
-                ["19_code.zip"] = "Libraries",
-                ["20_code.zip"] = "DependencyInjection",
-                ["21_code.zip"] = "Tasks",
-                ["22_code.zip"] = "FilesAndStreams",
-                ["23_code.zip"] = "Networking",
-                ["24_code.zip"] = "Security",
-                ["25_code.zip"] = "ADONet",
-                ["26_code.zip"] = "EFCore",
-                ["27_code.zip"] = "Localization",
-                ["28_code.zip"] = "Tests",
-                ["29_code.zip"] = "Diagnostics",
-                ["30_code.zip"] = "ASPNETCore",
-                ["31_code.zip"] = "MVC",
-                ["32_code.zip"] = "API",
-                ["33_code.zip"] = "Windows",
-                ["34_code.zip"] = "Patterns;PatternsXamarinShared",
-                ["35_code.zip"] = "Styles",
-                ["36_code.zip"] = "AdvancedWindows",
-                ["37_code.zip"] = "Xamarin;PatternsXamarinShared",
-                ["bonus_01_code.zip"] = "Composition",
-                ["bonus_02_code.zip"] = "XMLandJSON",
-                ["bonus_03_code.zip"] = "SignalRAndWebHooks",
-                ["bonus_04_code.zip"] = "BotAndCognitive",
-                ["bonus_05_code.zip"] = "MoreWindows",
+                ["01_code.zip"] = "1_CS/HelloWorld",
+                ["02_code.zip"] = "1_CS/CoreCSharp",
+                ["03_code.zip"] = "1_CS/Types",
+                ["04_code.zip"] = "1_CS/ObjectOrientation",
+                ["05_code.zip"] = "1_CS/OperatorsAndCasts",
+                ["06_code.zip"] = "1_CS/Arrays",
+                ["07_code.zip"] = "1_CS/Delegates",
+                ["08_code.zip"] = "1_CS/Collections",
+                ["09_code.zip"] = "1_CS/LINQ",
+                ["10_code.zip"] = "1_CS/ErrorsAndExceptions",
+                ["11_code.zip"] = "1_CS/Tasks",
+                ["12_code.zip"] = "1_CS/ReflectionAndSourceGenerators",
+                ["13_code.zip"] = "1_CS/Memory",
+
+                ["14_code.zip"] = "2_Libs/Libraries",
+                ["15_code.zip"] = "2_Libs/DependencyInjectionAndConfiguration",
+                ["16_code.zip"] = "2_Libs/LoggingAndMetrics",
+                ["17_code.zip"] = "2_Libs/Parallel",
+                ["18_code.zip"] = "2_Libs/FilesAndStreams",
+                ["19_code.zip"] = "2_Libs/Networking",
+                ["20_code.zip"] = "2_Libs/Security",
+                ["21_code.zip"] = "2_Libs/EFCore",
+                ["22_code.zip"] = "2_Libs/Localization",
+                ["23_code.zip"] = "2_Libs/Tests",
+
+                ["24_code.zip"] = "3_Web/ASPNETCore",
+                ["25_code.zip"] = "3_Web/Services",
+                ["26_code.zip"] = "3_Web/RazorAndMVC",
+                ["27_code.zip"] = "3_Web/Blazor",
+                ["28_code.zip"] = "3_Web/SignalR",
+
+                ["29_code.zip"] = "4_Apps/Windows",
+                ["30_code.zip"] = "4_Apps/Patterns",
+                ["31_code.zip"] = "4_Apps/Styles",
             };
         }
     }
