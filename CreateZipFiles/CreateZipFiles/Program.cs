@@ -17,11 +17,11 @@ namespace CreateZipFiles
        // private const string ResultFolder = @"c:\temp\results";
 
 
-        private static Dictionary<string, string> ZipFileMapping;
+        private static Dictionary<string, string>? ZipFileMapping;
 
         static void Main()
         {
-            InitZipFileMapping();
+            ZipFileMapping = InitZipFileMapping();
             Run();
         }
 
@@ -71,6 +71,8 @@ namespace CreateZipFiles
 
         private static void CreateZipFilesForChapters()
         {
+            if (ZipFileMapping is null) throw new InvalidOperationException("Initialize ZipFileMapping first");
+
             if (!Directory.Exists(ZipFolder))
             {
                 Directory.CreateDirectory(ZipFolder);
@@ -162,9 +164,9 @@ namespace CreateZipFiles
             return true;
         }
 
-        private static void InitZipFileMapping()
+        private static Dictionary<string, string> InitZipFileMapping()
         {
-            ZipFileMapping = new Dictionary<string, string>()
+            return new Dictionary<string, string>()
             {
                 ["01_code.zip"] = "1_CS/HelloWorld",
                 ["02_code.zip"] = "1_CS/CoreCSharp",
